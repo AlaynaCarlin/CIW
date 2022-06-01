@@ -1,0 +1,93 @@
+/*! Combinators */
+/* grouping selector */
+h3, h4, p {
+    background-attachment: fixed;
+}
+
+/* Descendant (all <a> that descend from <p> */
+p a {
+    background-attachment: fixed;
+}
+
+/* child */
+ol > li {
+    background-attachment: fixed;
+}
+
+/* general sibling (every <ol> that is preceded by a <p>) */
+p ~ ol {
+    background-attachment: fixed;
+}
+
+/* adjacent sibling (all <p> that dIRECTLY FOLLOW <h1>) */
+h1 + p {
+    background-attachment: fixed;
+}
+
+/* ! pseudo classes and elements */
+/* pseudo-classes allow the selection of elements based on state information */
+    /* * EX: p:checked, button:hover (single colon */
+/* pseudo elements represent entities that are not included in html */
+    /* * EX: p::before (double colon) */
+
+/* ! responsive design */
+/* consider using click actions ( <a> tag that triggers a phone call or text  */
+/* use flexbox or grid to guid tha view on different sizes */
+/* max-width - 100% for images */
+/* use @madia queries to separate styles for different views */
+/* utilize responsive design frameworks (bootstrap, Material */
+
+/* ! transitions */
+p{
+    width: 150px;
+    height: 100px;
+    border: 1px solid black;
+    transition-property: width;
+    transition-timing-function: ease;
+    transition-duration: 1s;
+    transition-delay: 0.3s;
+}
+
+p:hover{
+    width: 200;
+}
+
+/* ! animations */
+p{
+    color: blue;
+    font-weight: bold;
+    font-size: 1.2em;
+    animation-name: colorchange;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate ;
+}
+
+@keyframes colorchange {
+    0% {
+        color: blue;
+    }
+    50% {
+        color:yellow;
+    }
+    100% {
+        color: rgb(255, 125, 147);
+    }
+}
+
+/* ! ADA compliance */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

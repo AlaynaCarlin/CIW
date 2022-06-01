@@ -1,0 +1,103 @@
+<!-- use semantic elements -->
+<header>top</header>
+<main>main content</main>
+<nav>navigation</nav>
+<section>portions of the document split up</section>
+<article>content accompanying the main content</article>
+<aside>side note</aside>
+<footer>bottom of web page</footer>
+<details>additional details</details>
+<figcaption>caption for a figure</figcaption>
+<figure>self-contained content such as diagrams, photos, code, listings</figure>
+<mark>highlighted or marked text</mark>
+
+<!-- new element -->
+<!-- width, height, controls(display interactive controls), poster(thumbnail) -->
+<video>
+    <!-- src=video.mp4(video and audio), src=video.webm(just video), src=video.ogg(audio, video, open source) -->
+    <source/> 
+    <source/>
+    <source/>
+    text to be displayed if no source can be played
+</video>
+
+<!-- audio -->
+<!-- controls(display interactive controls), loop, autoplay -->
+<audio>
+    <source/>
+    <source/>
+    <source/>
+    your browser does not support the HTML5 audio element
+</audio>
+
+<!-- canvas -->
+<canvas height="400" width="400">
+</canvas>
+
+<script>
+    // grabs the canvas element
+    let c = document.querySelector('canvas');
+    // allows us to draw in the canvas
+    let ctx = c.getContext('2d');
+    // draw steps
+    ctx.fillStyle = 'blue';
+    ctx.beginPath();
+    ctx.moveTo(15, 15);
+    ctx.lineTo(100,45);
+    ctx.lineTo(60, 130);
+    ctx.fill();
+
+// creates an orange rectangle
+    ctx.fillStyle = "orange";
+    ctx.fillReact(130, 40, 30, 20);
+</script>
+
+<!-- ! Navigation -->
+<!-- place navigation in easy to find places -->
+<!-- text base hyperlinks and give padding -->
+<!-- provide access to the full version of the site -->
+<!-- limit the content so it isn't overwhelming ( you haven't got a lot of space ) -->
+
+<!-- ! images for mobile -->
+<!-- resize proportionally as the view gets smaller -->
+<!-- should rarely exceed ths size of the  screen -->
+<!-- consider WebGL to create 2D and #d graphics -->
+
+<!-- ! HTML5 API's -->
+<!-- Dom, Canvas, Geolocation, Drag-and-drop, File, History -->
+<!-- ? try a trello app -drag and drop -->
+<!-- ? file -->
+<!-- ? History -->
+
+<!-- ! Always do form validation -->
+<!-- input may take regex to validate without JS -->
+<!-- Using JS, you can inject warnings or error massages into the form -->
+<!-- it's goo practice -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
